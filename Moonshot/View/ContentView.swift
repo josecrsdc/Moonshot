@@ -10,22 +10,23 @@ import SwiftUI
 struct ContentView: View {
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     let missions: [Mission] = Bundle.main.decode("missions.json")
-    @State private var showingGrid: Bool = false
+    let typesView = ["List", "Grid"]
+    @State private var viewSelected = "List"
     
     var body: some View {
         NavigationView {
             VStack{
                 HStack {
-                    Toggle(isOn: $showingGrid) {
-                        Text(showingGrid ? "List" : "Grid")
-                            .font(.headline)
-                            .foregroundColor(.white)
+                    Picker("", selection: $viewSelected) {
+                        ForEach(typesView, id: \.self) {
+                            Text($0)
+                        }
                     }
-                    .frame(width: 100)
+                    .pickerStyle(.segmented)
                     Spacer()
                 }
                 .padding()
-                if showingGrid {
+                if viewSelected == "Grid" {
                     GridLayoutView(missions: missions, astronauts: astronauts)
                 } else {
                     ListLayoutView(missions: missions, astronauts: astronauts)
@@ -42,4 +43,8 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+enum TypeView {
+    case list, grid
 }

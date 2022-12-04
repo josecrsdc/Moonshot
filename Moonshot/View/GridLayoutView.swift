@@ -15,7 +15,7 @@ struct GridLayoutView: View {
     ]
     
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             LazyVGrid(columns: columns) {
                 ForEach(missions) { mission in
                     NavigationLink {
@@ -49,6 +49,7 @@ struct GridLayoutView: View {
             }
         }
         .padding(.horizontal)
+        
     }
 }
 
