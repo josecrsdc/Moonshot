@@ -19,6 +19,8 @@
 		82F7CEBE2934209200DB157C /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 82F7CEBD2934209200DB157C /* astronauts.json */; };
 		82F7CEC32934231300DB157C /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F7CEC22934231300DB157C /* MissionView.swift */; };
 		82F7CEC5293D051200DB157C /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F7CEC4293D051200DB157C /* AstronautView.swift */; };
+		82F7CEC7293D12CD00DB157C /* GridLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F7CEC6293D12CD00DB157C /* GridLayoutView.swift */; };
+		82F7CEC9293D163800DB157C /* ListLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F7CEC8293D163800DB157C /* ListLayoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		82F7CEBD2934209200DB157C /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		82F7CEC22934231300DB157C /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 		82F7CEC4293D051200DB157C /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
+		82F7CEC6293D12CD00DB157C /* GridLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayoutView.swift; sourceTree = "<group>"; };
+		82F7CEC8293D163800DB157C /* ListLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLayoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				82F7CE5B29300E4A00DB157C /* ContentView.swift */,
 				82F7CEC22934231300DB157C /* MissionView.swift */,
 				82F7CEC4293D051200DB157C /* AstronautView.swift */,
+				82F7CEC6293D12CD00DB157C /* GridLayoutView.swift */,
+				82F7CEC8293D163800DB157C /* ListLayoutView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,8 +197,10 @@
 				82F7CE6C2930276400DB157C /* Astronaut.swift in Sources */,
 				82F7CEC5293D051200DB157C /* AstronautView.swift in Sources */,
 				82F7CE74293034D300DB157C /* Color-Theme.swift in Sources */,
+				82F7CEC9293D163800DB157C /* ListLayoutView.swift in Sources */,
 				82F7CE5C29300E4A00DB157C /* ContentView.swift in Sources */,
 				82F7CE5A29300E4A00DB157C /* MoonshotApp.swift in Sources */,
+				82F7CEC7293D12CD00DB157C /* GridLayoutView.swift in Sources */,
 				82F7CE7229302CFF00DB157C /* Mission.swift in Sources */,
 				82F7CE6E293027E000DB157C /* Bundle-Decodable.swift in Sources */,
 			);
